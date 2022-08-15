@@ -16,4 +16,4 @@ app.use('/api/article', articlesRouter);
 
 const port = process.env.PORT || 9000;
 
-app.listen(port, () => console.log(`Server is up on port: ${port}`));
+app.listen(port, () => console.log(`Server is up on port ${port}`));
