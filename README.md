@@ -11,3 +11,5 @@
 ### Setting up Server(locally)
 
 #### cd server && npm install && npm run dev
+
+#### server url https://demo-node-api-123.herokuapp.com/api
