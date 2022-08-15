@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ArticleIcon from '@mui/icons-material/Article';
 import TextField from '@mui/material/TextField';
 import { useDispatch, useSelector } from 'react-redux';
-import { Redirect } from 'react-router-dom';
+import { Redirect, useHistory } from 'react-router-dom';
 import { logout } from '../redux/actions/auth';
 
 // modal
@@ -31,6 +31,7 @@ const style = {
 const Navbar = () => {
   const { isAuthenticated, loading } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+  const history = useHistory()
 
   // modal
   const [open, setOpen] = useState(false);
@@ -73,7 +74,7 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Button color='inherit' onClick={() => console.log('clicked')}>
+              <Button color='inherit' onClick={() => history.push('/login')}>
                 Login
               </Button>
             </>

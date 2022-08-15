@@ -22,6 +22,7 @@ const Signup = () => {
 
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
+  
 
   const onChange = (e) =>
     setRegisterState({ ...registerState, [e.target.name]: e.target.value });
