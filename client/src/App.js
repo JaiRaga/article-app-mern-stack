@@ -34,7 +34,7 @@ function App() {
         <Fragment>
           <Navbar />
           <Switch>
-            <PrivateRoute exact path='/' component={Feed} />
+            <PrivateRoute exact path='/dashboard' component={Feed} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/Login' component={Login} />
           </Switch>
